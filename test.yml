@@ -1,6 +1,6 @@
 ---
 - hosts: all
-       gather_facts: no
-  tasks:
-       - name: Check the date on the server.
-       command: date
+  remote_user: root
+  tasks:	
+    - name: test yml
+      command: /usr/bin/wall "hello world"
